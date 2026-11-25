@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xendar | Ingeniería de Datos, Logística e IoT para Ciudades Inteligentes</title>
+  <meta name="description" content="Transformamos datos operativos en ahorro y control real. Soluciones de software para flotas de carga pesada y modernización urbana con IoT e Inteligencia Artificial." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            xendar: {
+              navy: '#1E334D',
+              dark: '#142336',
+              teal: '#2B8A91',
+              aqua: '#48B5B8',
+              light: '#F4F8FA',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-xendar-teal selection:text-white">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo SVG Xendar -->
+      <a href="#" class="flex items-center gap-2.5 group">
+        <svg class="h-9 w-auto" viewBox="0 0 180 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Xendar">
+          <defs>
+            <linearGradient id="xTealTop" x1="18" y1="4" x2="36" y2="20" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#5CC8C9"/>
+              <stop offset="1" stop-color="#2B8A91"/>
+            </linearGradient>
+            <linearGradient id="xTealBot" x1="4" y1="40" x2="22" y2="24" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1E334D"/>
+              <stop offset="1" stop-color="#2B8A91"/>
+            </linearGradient>
+          </defs>
+          <!-- Brazo superior izquierdo (Navy) -->
+          <path d="M4 6H15L23 19H13L4 6Z" fill="#1E334D"/>
+          <!-- Brazo superior derecho (Teal) -->
+          <path d="M27 6H38L27 19H17L27 6Z" fill="url(#xTealTop)"/>
+          <!-- Brazo inferior izquierdo (Teal-Navy) -->
+          <path d="M13 24H23L14 38H3L13 24Z" fill="url(#xTealBot)"/>
+          <!-- Brazo inferior derecho (Navy) -->
+          <path d="M18 24H28L38 38H27L18 24Z" fill="#1E334D"/>
+          <!-- Texto Xendar -->
+          <text x="44" y="33" fill="#1E334D" font-family="Inter, sans-serif" font-weight="800" font-size="30" letter-spacing="-0.8">endar</text>
+        </svg>
+      </a>
+
+      <!-- Links Desktop -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="#verticales" class="hover:text-xendar-navy transition">Soluciones</a>
+        <a href="#logistica" class="hover:text-xendar-navy transition">Logística</a>
+        <a href="#ciudades" class="hover:text-xendar-navy transition">Ciudades Inteligentes</a>
+        <a href="#arquitectura" class="hover:text-xendar-navy transition">Por qué Xendar</a>
+        <a href="#contacto" class="hover:text-xendar-navy transition">Contacto</a>
+      </nav>
+
+      <!-- Acciones -->
+      <div class="flex items-center gap-3">
+        <!-- Ajustar href si la app de login está en un subdominio -->
+        <a href="#contacto" class="hidden sm:inline-block text-sm font-semibold text-xendar-navy hover:text-xendar-teal transition px-3 py-2">
+          Ingresar
+        </a>
+        <a href="#contacto" class="bg-xendar-navy hover:bg-xendar-dark text-white text-sm font-semibold px-5 py-2.5 rounded-lg shadow-sm transition">
+          Solicitar Demo
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-xendar-light via-white to-white pt-16 pb-20 lg:pt-24 lg:pb-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-xendar-teal/10 text-xendar-teal text-xs font-semibold uppercase tracking-wider mb-6">
+          <span class="w-2 h-2 rounded-full bg-xendar-teal"></span>
+          Ingeniería de Datos · IoT Industrial · Inteligencia Artificial
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-xendar-navy tracking-tight leading-[1.1] mb-6">
+          Transformamos datos operativos en <span class="text-xendar-teal">control y ahorro real.</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-slate-600 leading-relaxed mb-10">
+          Desarrollamos software a medida, hardware IoT industrial y modelos de Inteligencia Artificial para dos desafíos críticos: optimizar la rentabilidad de <strong>flotas de carga pesada</strong> y modernizar la infraestructura de <strong>ciudades inteligentes</strong>.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#ciudades" class="inline-flex justify-center items-center gap-2 bg-xendar-navy hover:bg-xendar-dark text-white font-semibold px-6 py-3.5 rounded-lg shadow-md transition">
+            Xendar Ciudades Inteligentes
+            <span aria-hidden="true">→</span>
+          </a>
+          <a href="#logistica" class="inline-flex justify-center items-center gap-2 bg-white hover:bg-slate-50 text-xendar-navy border border-slate-300 font-semibold px-6 py-3.5 rounded-lg transition">
+            Xendar Logística y Flotas
+          </a>
+        </div>
+      </div>
+
+      <!-- Métricas / Credenciales -->
+      <div class="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-8 shadow-sm max-w-4xl">
+        <div>
+          <div class="text-3xl font-extrabold text-xendar-navy">20+</div>
+          <div class="text-sm text-slate-500 mt-1">Años de experiencia industrial y operativa</div>
+        </div>
+        <div class="sm:border-l sm:border-slate-200 sm:pl-6">
+          <div class="text-3xl font-extrabold text-xendar-navy">IoT + IA</div>
+          <div class="text-sm text-slate-500 mt-1">Hardware propio y telemetría en tiempo real</div>
+        </div>
+        <div class="sm:border-l sm:border-slate-200 sm:pl-6">
+          <div class="text-3xl font-extrabold text-xendar-navy">100% Local</div>
+          <div class="text-sm text-slate-500 mt-1">Desarrollo y soporte sin licencias en dólares</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTOR DE VERTICALES -->
+  <section id="verticales" class="py-16 bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-extrabold text-xendar-navy">Dos verticales, una misma arquitectura</h2>
+        <p class="text-slate-600 mt-3">Ingeniería robusta pensada para operar en la calle, con tableros ejecutivos claros para la toma de decisiones.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Card Logística -->
+        <div class="rounded-2xl border border-slate-200 p-8 hover:border-xendar-teal/60 hover:shadow-lg transition bg-white flex flex-col justify-between">
+          <div>
+            <span class="inline-block text-xs font-bold uppercase tracking-wider text-xendar-navy bg-slate-100 px-3 py-1 rounded-md mb-4">Sector Privado · B2B</span>
+            <h3 class="text-2xl font-bold text-xendar-navy mb-3">Xendar Logística</h3>
+            <p class="text-slate-600 leading-relaxed mb-6">
+              Cada camión genera datos. Analizamos los viajes de tu flota para detectar kilómetros en vacío, desvíos innecesarios, consumo de combustible y margen real por kilómetro (<strong>$/km</strong>), sin instalar hardware nuevo.
+            </p>
+          </div>
+          <a href="#logistica" class="text-xendar-teal font-semibold hover:text-xendar-navy inline-flex items-center gap-1">
+            Ver solución para flotas <span>→</span>
+          </a>
+        </div>
+
+        <!-- Card Ciudades -->
+        <div class="rounded-2xl border-2 border-xendar-teal/40 p-8 hover:border-xendar-teal hover:shadow-lg transition bg-xendar-light/40 flex flex-col justify-between">
+          <div>
+            <span class="inline-block text-xs font-bold uppercase tracking-wider text-white bg-xendar-teal px-3 py-1 rounded-md mb-4">Sector Público · Smart Cities</span>
+            <h3 class="text-2xl font-bold text-xendar-navy mb-3">Xendar Ciudades Inteligentes</h3>
+            <p class="text-slate-600 leading-relaxed mb-6">
+              Plan modular de modernización urbana con IoT e IA: estaciones sustentables con telemetría, paradas de colectivo con matriz LED, telegestión de alumbrado y auditoría de obra pública por visión computacional.
+            </p>
+          </div>
+          <a href="#ciudades" class="text-xendar-teal font-semibold hover:text-xendar-navy inline-flex items-center gap-1">
+            Ver hoja de ruta municipal <span>→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 1: XENDAR CIUDADES INTELIGENTES (B2G) -->
+  <section id="ciudades" class="py-20 bg-xendar-light border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-14">
+        <span class="text-xs font-bold uppercase tracking-wider text-xendar-teal">Plan de Modernización Urbana</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-xendar-navy mt-2">
+          Tecnología modular para municipios: resultados visibles desde el primer piloto
+        </h2>
+        <p class="text-slate-600 mt-4 text-lg">
+          Cada módulo funciona de forma independiente y reporta a un único <strong>Tablero de Control Ejecutivo</strong>, permitiendo escalar según presupuesto y prioridades de gestión.
+        </p>
+      </div>
+
+      <!-- Grid de 4 Módulos -->
+      <div class="grid md:grid-cols-2 gap-6 mb-14">
+        <!-- Módulo 1 -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-xendar-teal bg-xendar-teal/10 px-2.5 py-1 rounded">Nivel 1 · Impacto Inmediato</span>
+            <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-full">MVP Operativo</span>
+          </div>
+          <h3 class="text-xl font-bold text-xendar-navy mb-2">1. Estaciones Sustentables Inteligentes</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            Puntos de hidratación pública (agua fría/caliente) con telemetría industrial en tiempo real. Detección instantánea de fallas (chiller, caldera, luces o conectividad), bloqueo antivandálico automático y métricas exactas de litros dispensados y botellas plásticas evitadas.
+          </p>
+          <div class="text-xs text-slate-500 font-medium pt-3 border-t border-slate-100">
+            Plazo de piloto: <strong class="text-xendar-navy">30 días</strong> · Visibilidad ciudadana: <strong class="text-xendar-navy">Muy Alta</strong>
+          </div>
+        </div>
+
+        <!-- Módulo 2 -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-xendar-teal bg-xendar-teal/10 px-2.5 py-1 rounded">Nivel 1 · Movilidad Urbana</span>
+          </div>
+          <h3 class="text-xl font-bold text-xendar-navy mb-2">2. Paradas Inteligentes ("¿Cuándo llega el cole?")</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            Refugios de transporte público equipados con pantallas de matriz LED de alto brillo conectadas al GPS de la flota. Informa al vecino el tiempo exacto de arribo y desvíos, mientras permite al municipio auditar frecuencias de concesionarias.
+          </p>
+          <div class="text-xs text-slate-500 font-medium pt-3 border-t border-slate-100">
+            Plazo de piloto: <strong class="text-xendar-navy">45 a 60 días</strong> · Visibilidad ciudadana: <strong class="text-xendar-navy">Extrema</strong>
+          </div>
+        </div>
+
+        <!-- Módulo 3 -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-xendar-navy bg-slate-100 px-2.5 py-1 rounded">Nivel 2 · Servicios Públicos</span>
+          </div>
+          <h3 class="text-xl font-bold text-xendar-navy mb-2">3. Telegestión de Alumbrado y Sensores Urbanos</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            Nodos IoT en tableros eléctricos para detectar fases caídas y consumos anómalos antes del reclamo vecinal. Incluye sensores ultrasónicos de alerta temprana hídrica en desagües pluviales y medición de llenado en contenedores de residuos.
+          </p>
+          <div class="text-xs text-slate-500 font-medium pt-3 border-t border-slate-100">
+            Plazo de piloto: <strong class="text-xendar-navy">60 días</strong> · Retorno: <strong class="text-xendar-navy">Ahorro energético y prevención</strong>
+          </div>
+        </div>
+
+        <!-- Módulo 4 -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-xendar-navy bg-slate-100 px-2.5 py-1 rounded">Nivel 3 · Inteligencia Artificial</span>
+          </div>
+          <h3 class="text-xl font-bold text-xendar-navy mb-2">4. Auditoría de Obra Pública con Visión Computacional</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            Algoritmos de IA que analizan registros fotográficos periódicos de obras civiles y pavimentación, contrastando el avance físico real contra el cronograma certificado y estimando consumos de materiales para respaldar certificaciones.
+          </p>
+          <div class="text-xs text-slate-500 font-medium pt-3 border-t border-slate-100">
+            Plazo de piloto: <strong class="text-xendar-navy">30 a 45 días</strong> · Retorno: <strong class="text-xendar-navy">Control presupuestario y transparencia</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Callout Demo en Vivo -->
+      <div class="bg-xendar-navy rounded-2xl p-8 sm:p-10 text-white flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+        <div class="max-w-2xl">
+          <h3 class="text-2xl font-bold mb-2">Demostración en vivo en su despacho</h3>
+          <p class="text-slate-300 text-sm sm:text-base">
+            Contamos con una <strong>Valija IoT funcional</strong> conectada en tiempo real a nuestro tablero en la nube para probar alertas instantáneas, cortes de seguridad y telemetría en vivo antes de definir el piloto.
+          </p>
+        </div>
+        <a href="#contacto" class="shrink-0 bg-xendar-teal hover:bg-xendar-aqua text-white font-semibold px-6 py-3.5 rounded-lg transition">
+          Agendar Demo Municipal
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2: XENDAR LOGÍSTICA (B2B) -->
+  <section id="logistica" class="py-20 bg-white border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7">
+          <span class="text-xs font-bold uppercase tracking-wider text-xendar-teal">Xendar Logística · Carga Pesada</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-xendar-navy mt-2 mb-5">
+            Cada camión genera datos. Xendar los convierte en ahorro real.
+          </h2>
+          <p class="text-slate-600 text-lg leading-relaxed mb-6">
+            Analizamos los viajes de tu flota para detectar kilómetros en vacío, desvíos innecesarios, consumo de combustible y eficiencia de cada ruta. Todo sin instalar hardware nuevo, a través de los datos GPS del celular del conductor y algoritmos avanzados.
+          </p>
+
+          <div class="grid sm:grid-cols-3 gap-4 mb-8">
+            <div class="p-4 rounded-xl bg-xendar-light border border-slate-200/80">
+              <div class="font-bold text-xendar-navy text-sm">FLOTAS PROPIAS</div>
+              <p class="text-xs text-slate-600 mt-1">Control directo de costos operativos y margen por viaje.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-xendar-light border border-slate-200/80">
+              <div class="font-bold text-xendar-navy text-sm">OPERADORES REGIONALES</div>
+              <p class="text-xs text-slate-600 mt-1">Trazabilidad multi-ruta y reducción de tiempos muertos.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-xendar-light border border-slate-200/80">
+              <div class="font-bold text-xendar-navy text-sm">PYMES EN CRECIMIENTO</div>
+              <p class="text-xs text-slate-600 mt-1">Escalabilidad inmediata sin inversión inicial en rastreadores.</p>
+            </div>
+          </div>
+
+          <a href="#contacto" class="inline-flex items-center gap-2 text-xendar-navy font-bold hover:text-xendar-teal transition">
+            Solicitar análisis de flota <span>→</span>
+          </a>
+        </div>
+
+        <!-- Panel visual KPIs Logística -->
+        <div class="lg:col-span-5">
+          <div class="bg-xendar-navy text-white rounded-2xl p-8 shadow-xl">
+            <div class="text-xs font-semibold uppercase tracking-wider text-xendar-aqua mb-6">Métricas clave de operación</div>
+            <div class="space-y-6">
+              <div class="flex items-start justify-between border-b border-white/10 pb-4">
+                <div>
+                  <div class="text-2xl font-extrabold">$/km</div>
+                  <div class="text-sm text-slate-300">Foco absoluto en margen por kilómetro</div>
+                </div>
+                <span class="text-xs bg-xendar-teal/20 text-xendar-aqua px-2.5 py-1 rounded font-semibold">Rentabilidad</span>
+              </div>
+              <div class="flex items-start justify-between border-b border-white/10 pb-4">
+                <div>
+                  <div class="text-2xl font-extrabold">CUE</div>
+                  <div class="text-sm text-slate-300">Datos privados y aislados por flota</div>
+                </div>
+                <span class="text-xs bg-xendar-teal/20 text-xendar-aqua px-2.5 py-1 rounded font-semibold">Seguridad</span>
+              </div>
+              <div class="flex items-start justify-between">
+                <div>
+                  <div class="text-2xl font-extrabold">0 Hardware</div>
+                  <div class="text-sm text-slate-300">Despliegue rápido vía GPS del conductor</div>
+                </div>
+                <span class="text-xs bg-xendar-teal/20 text-xendar-aqua px-2.5 py-1 rounded font-semibold">Agilidad</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ XENDAR -->
+  <section id="arquitectura" class="py-16 bg-slate-50 border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-extrabold text-xendar-navy">Ingeniería aplicada, no presentaciones vacías</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl border border-slate-200">
+          <h3 class="font-bold text-xendar-navy text-lg mb-2">Desarrollo y soporte local</h3>
+          <p class="text-sm text-slate-600">Diseñamos tanto la electrónica de campo como el software en la nube. Respuesta directa en Argentina, sin intermediarios ni ataduras a plataformas cerradas.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl border border-slate-200">
+          <h3 class="font-bold text-xendar-navy text-lg mb-2">Implementación progresiva</h3>
+          <p class="text-sm text-slate-600">Validamos cada proyecto con pilotos acotados de 30 a 60 días y métricas claras antes de comprometer presupuestos de gran escala.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl border border-slate-200">
+          <h3 class="font-bold text-xendar-navy text-lg mb-2">Tablero Ejecutivo Unificado</h3>
+          <p class="text-sm text-slate-600">Toda la información —flotas, sensores urbanos o avance de obra— converge en paneles web accesibles desde cualquier dispositivo con alertas en tiempo real.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-20 bg-white border-t border-slate-200/70">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-extrabold text-xendar-navy">Solicitar Demo o Reunión Técnica</h2>
+        <p class="text-slate-600 mt-2">Contanos qué proyecto querés evaluar y coordinamos una demostración en vivo.</p>
+      </div>
+
+      <form action="mailto:contacto@xendar.com.ar" method="POST" enctype="text/plain" class="bg-xendar-light p-8 rounded-2xl border border-slate-200 space-y-5">
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label for="nombre" class="block text-sm font-semibold text-xendar-navy mb-1.5">Nombre y Apellido</label>
+            <input type="text" id="nombre" name="Nombre" required class="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm focus:border-xendar-teal focus:outline-none bg-white" placeholder="Ej. Juan Pérez" />
+          </div>
+          <div>
+            <label for="organizacion" class="block text-sm font-semibold text-xendar-navy mb-1.5">Empresa o Municipio</label>
+            <input type="text" id="organizacion" name="Organizacion" required class="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm focus:border-xendar-teal focus:outline-none bg-white" placeholder="Ej. Municipalidad / Transporte S.A." />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label for="email" class="block text-sm font-semibold text-xendar-navy mb-1.5">Email de contacto</label>
+            <input type="email" id="email" name="Email" required class="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm focus:border-xendar-teal focus:outline-none bg-white" placeholder="nombre@organizacion.com" />
+          </div>
+          <div>
+            <label for="vertical" class="block text-sm font-semibold text-xendar-navy mb-1.5">Área de interés</label>
+            <select id="vertical" name="Vertical" class="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm focus:border-xendar-teal focus:outline-none bg-white">
+              <option value="Ciudades Inteligentes - Estaciones Sustentables">Ciudades Inteligentes · Estaciones Sustentables</option>
+              <option value="Ciudades Inteligentes - Paradas LED / Sensores">Ciudades Inteligentes · Paradas LED y Sensores</option>
+              <option value="Ciudades Inteligentes - IA en Obra Pública">Ciudades Inteligentes · IA en Obra Pública</option>
+              <option value="Logística y Flotas de Carga Pesada">Logística y Flotas de Carga Pesada</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="mensaje" class="block text-sm font-semibold text-xendar-navy mb-1.5">Mensaje</label>
+          <textarea id="mensaje" name="Mensaje" rows="4" class="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm focus:border-xendar-teal focus:outline-none bg-white" placeholder="Contanos brevemente tu necesidad o fecha ideal para una demo..."></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-xendar-navy hover:bg-xendar-dark text-white font-semibold py-3.5 rounded-lg shadow-sm transition">
+          Enviar Solicitud
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-xendar-dark text-slate-400 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
+      <div class="font-bold text-white tracking-tight text-lg">Xendar</div>
+      <div>Ingeniería de Datos, Logística e IoT · Argentina</div>
+      <div>© 2026 Xendar. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+</body>
+</html>
